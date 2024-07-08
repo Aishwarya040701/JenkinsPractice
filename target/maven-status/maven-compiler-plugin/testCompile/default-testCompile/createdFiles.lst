@@ -1,0 +1,6 @@
+com\runner\TestRunner.class
+com\stepdefinition\YourInformationPageStepDef.class
+com\stepdefinition\CartPageStepDef.class
+com\stepdefinition\ProductsPageStepDef.class
+com\stepdefinition\LoginStepDef.class
+com\stepdefinition\ProductCheckoutProcessStepDef.class

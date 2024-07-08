@@ -1,0 +1,9 @@
+com\base\BaseTest.class
+com\pom\LoginPage.class
+com\pom\YourCartPage.class
+com\utils\ReadPropertiesFile.class
+com\base\DriverManager.class
+com\pom\YourInformationPage.class
+com\pom\OverviewPage.class
+com\utils\ReadExcelFile.class
+com\pom\ProductsPage.class
