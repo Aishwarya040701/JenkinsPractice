@@ -14,6 +14,7 @@ import com.pom.YourInformationPage;
 import com.utils.ReadPropertiesFile;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseTest {
 	public WebDriver driver;
@@ -26,7 +27,6 @@ public class BaseTest {
 
 	public WebDriver setUp() {
 		read = new ReadPropertiesFile();
-		//System.setProperty("webdriver.chrome.driver", read.getProperties("driverLocation"));
 		switch (System.getProperty("browser", "chrome")) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
@@ -38,8 +38,8 @@ public class BaseTest {
 			break;
 
 		case "firefox":
-			WebDriverManager.edgedriver().setup();
-			driver = new EdgeDriver();
+			WebDriverManager.firefoxdriver().setup();
+			driver = new FirefoxDriver();
 			break;
 
 		default:

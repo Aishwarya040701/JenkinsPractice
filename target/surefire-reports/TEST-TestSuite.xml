@@ -1,375 +1,356 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="73.456" tests="22" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="TestSuite" time="422.202" tests="22" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="20"/>
+    <property name="java.specification.version" value="22"/>
+    <property name="webdriver.chrome.driver" value="C:\Users\Lenovo\.cache\selenium\chromedriver\win64\126.0.6478.182\chromedriver.exe"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\selenium_workspace\cucumberprojectWFS\target\test-classes;C:\selenium_workspace\cucumberprojectWFS\target\classes;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-java\4.22.0\selenium-java-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-api\4.22.0\selenium-api-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.22.0\selenium-chrome-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.22.0\selenium-chromium-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-json\4.22.0\selenium-json-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.22.0\selenium-manager-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.22.0\selenium-devtools-v124-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.22.0\selenium-devtools-v125-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.22.0\selenium-devtools-v126-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.22.0\selenium-devtools-v85-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.22.0\selenium-edge-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.22.0\selenium-firefox-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-http\4.22.0\selenium-http-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.22.0\selenium-ie-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.22.0\selenium-remote-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\h.aishwarya\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\h.aishwarya\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\h.aishwarya\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\h.aishwarya\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\h.aishwarya\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-api\1.39.0\opentelemetry-api-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-context\1.39.0\opentelemetry-context-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.39.0\opentelemetry-exporter-logging-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.39.0\opentelemetry-sdk-common-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.39.0\opentelemetry-sdk-extension-autoconfigure-spi-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.39.0\opentelemetry-sdk-extension-autoconfigure-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.39.0-alpha\opentelemetry-api-incubator-1.39.0-alpha.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.39.0\opentelemetry-sdk-trace-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.39.0\opentelemetry-sdk-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.39.0\opentelemetry-sdk-metrics-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.39.0\opentelemetry-sdk-logs-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-os\4.22.0\selenium-os-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.22.0\selenium-safari-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-support\4.22.0\selenium-support-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\h.aishwarya\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\h.aishwarya\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\h.aishwarya\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\h.aishwarya\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.1\webdrivermanager-5.9.1.jar;C:\Users\h.aishwarya\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\h.aishwarya\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\h.aishwarya\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\h.aishwarya\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\h.aishwarya\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\h.aishwarya\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\h.aishwarya\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\h.aishwarya\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\h.aishwarya\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\h.aishwarya\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\h.aishwarya\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\h.aishwarya\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\h.aishwarya\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-junit\7.18.0\cucumber-junit-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\h.aishwarya\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-picocontainer\7.18.0\cucumber-picocontainer-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\h.aishwarya\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\h.aishwarya\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\h.aishwarya\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\h.aishwarya\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;"/>
+    <property name="java.class.path" value="C:\selenium\JenkinsPractice\target\test-classes;C:\selenium\JenkinsPractice\target\classes;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-java\4.22.0\selenium-java-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-api\4.22.0\selenium-api-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.22.0\selenium-chrome-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.22.0\selenium-chromium-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-json\4.22.0\selenium-json-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.22.0\selenium-manager-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.22.0\selenium-devtools-v124-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.22.0\selenium-devtools-v125-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.22.0\selenium-devtools-v126-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.22.0\selenium-devtools-v85-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.22.0\selenium-edge-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.22.0\selenium-firefox-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-http\4.22.0\selenium-http-4.22.0.jar;C:\Users\Lenovo\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.22.0\selenium-ie-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.22.0\selenium-remote-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Lenovo\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Lenovo\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Lenovo\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-api\1.39.0\opentelemetry-api-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-context\1.39.0\opentelemetry-context-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.39.0\opentelemetry-exporter-logging-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.39.0\opentelemetry-sdk-common-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.39.0\opentelemetry-sdk-extension-autoconfigure-spi-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.39.0\opentelemetry-sdk-extension-autoconfigure-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.39.0-alpha\opentelemetry-api-incubator-1.39.0-alpha.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.39.0\opentelemetry-sdk-trace-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.39.0\opentelemetry-sdk-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.39.0\opentelemetry-sdk-metrics-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.39.0\opentelemetry-sdk-logs-1.39.0.jar;C:\Users\Lenovo\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-os\4.22.0\selenium-os-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.22.0\selenium-safari-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-support\4.22.0\selenium-support-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Lenovo\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Lenovo\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Lenovo\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.1\webdrivermanager-5.9.1.jar;C:\Users\Lenovo\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\Lenovo\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\Lenovo\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\Lenovo\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\Lenovo\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Lenovo\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\Lenovo\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\Lenovo\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Lenovo\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-junit\7.18.0\cucumber-junit-7.18.0.jar;C:\Users\Lenovo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-picocontainer\7.18.0\cucumber-picocontainer-7.18.0.jar;C:\Users\Lenovo\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Lenovo\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\Lenovo\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Lenovo\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\Lenovo\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Lenovo\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\Lenovo\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\Lenovo\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="implicitlyWait" value="15"/>
     <property name="user.variant" value=""/>
     <property name="java.vendor.url" value="https://java.oracle.com/"/>
     <property name="user.timezone" value="Asia/Calcutta"/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="java.vm.specification.version" value="20"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="22"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="US"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-20\bin"/>
-    <property name="sun.java.command" value="C:\Users\h.aishwarya\AppData\Local\Temp\surefire1384147898448420431\surefirebooter-20240708155455549_3.jar C:\Users\h.aishwarya\AppData\Local\Temp\surefire1384147898448420431 2024-07-08T15-54-55_430-jvmRun1 surefire-20240708155455549_1tmp surefire_0-20240708155455549_2tmp"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
+    <property name="sun.java.command" value="C:\Users\Lenovo\AppData\Local\Temp\surefire12197506350666536310\surefirebooter-20240814144337629_3.jar C:\Users\Lenovo\AppData\Local\Temp\surefire12197506350666536310 2024-08-14T14-43-37_200-jvmRun1 surefire-20240814144337629_1tmp surefire_0-20240814144337629_2tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\selenium_workspace\cucumberprojectWFS\target\test-classes;C:\selenium_workspace\cucumberprojectWFS\target\classes;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-java\4.22.0\selenium-java-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-api\4.22.0\selenium-api-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.22.0\selenium-chrome-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.22.0\selenium-chromium-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-json\4.22.0\selenium-json-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.22.0\selenium-manager-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.22.0\selenium-devtools-v124-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.22.0\selenium-devtools-v125-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.22.0\selenium-devtools-v126-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.22.0\selenium-devtools-v85-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.22.0\selenium-edge-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.22.0\selenium-firefox-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-http\4.22.0\selenium-http-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.22.0\selenium-ie-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.22.0\selenium-remote-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\h.aishwarya\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\h.aishwarya\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\h.aishwarya\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\h.aishwarya\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\h.aishwarya\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-api\1.39.0\opentelemetry-api-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-context\1.39.0\opentelemetry-context-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.39.0\opentelemetry-exporter-logging-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.39.0\opentelemetry-sdk-common-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.39.0\opentelemetry-sdk-extension-autoconfigure-spi-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.39.0\opentelemetry-sdk-extension-autoconfigure-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.39.0-alpha\opentelemetry-api-incubator-1.39.0-alpha.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.39.0\opentelemetry-sdk-trace-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.39.0\opentelemetry-sdk-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.39.0\opentelemetry-sdk-metrics-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.39.0\opentelemetry-sdk-logs-1.39.0.jar;C:\Users\h.aishwarya\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-os\4.22.0\selenium-os-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.22.0\selenium-safari-driver-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\seleniumhq\selenium\selenium-support\4.22.0\selenium-support-4.22.0.jar;C:\Users\h.aishwarya\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\h.aishwarya\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\h.aishwarya\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\h.aishwarya\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\h.aishwarya\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.1\webdrivermanager-5.9.1.jar;C:\Users\h.aishwarya\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\h.aishwarya\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\h.aishwarya\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\h.aishwarya\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\h.aishwarya\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\h.aishwarya\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\h.aishwarya\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\h.aishwarya\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\h.aishwarya\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\h.aishwarya\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\h.aishwarya\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\h.aishwarya\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\h.aishwarya\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-junit\7.18.0\cucumber-junit-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\h.aishwarya\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\io\cucumber\cucumber-picocontainer\7.18.0\cucumber-picocontainer-7.18.0.jar;C:\Users\h.aishwarya\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\h.aishwarya\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\h.aishwarya\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\h.aishwarya\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\h.aishwarya\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\h.aishwarya\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;"/>
+    <property name="surefire.test.class.path" value="C:\selenium\JenkinsPractice\target\test-classes;C:\selenium\JenkinsPractice\target\classes;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-java\4.22.0\selenium-java-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-api\4.22.0\selenium-api-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.22.0\selenium-chrome-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.22.0\selenium-chromium-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-json\4.22.0\selenium-json-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.22.0\selenium-manager-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v124\4.22.0\selenium-devtools-v124-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v125\4.22.0\selenium-devtools-v125-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v126\4.22.0\selenium-devtools-v126-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.22.0\selenium-devtools-v85-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.22.0\selenium-edge-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.22.0\selenium-firefox-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-http\4.22.0\selenium-http-4.22.0.jar;C:\Users\Lenovo\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.22.0\selenium-ie-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.22.0\selenium-remote-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\guava\33.2.1-jre\guava-33.2.1-jre.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\Lenovo\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Lenovo\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Lenovo\.m2\repository\org\checkerframework\checker-qual\3.42.0\checker-qual-3.42.0.jar;C:\Users\Lenovo\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.25.0-alpha\opentelemetry-semconv-1.25.0-alpha.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-api\1.39.0\opentelemetry-api-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-context\1.39.0\opentelemetry-context-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.39.0\opentelemetry-exporter-logging-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.39.0\opentelemetry-sdk-common-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.39.0\opentelemetry-sdk-extension-autoconfigure-spi-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.39.0\opentelemetry-sdk-extension-autoconfigure-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.39.0-alpha\opentelemetry-api-incubator-1.39.0-alpha.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.39.0\opentelemetry-sdk-trace-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.39.0\opentelemetry-sdk-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.39.0\opentelemetry-sdk-metrics-1.39.0.jar;C:\Users\Lenovo\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.39.0\opentelemetry-sdk-logs-1.39.0.jar;C:\Users\Lenovo\.m2\repository\net\bytebuddy\byte-buddy\1.14.17\byte-buddy-1.14.17.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-os\4.22.0\selenium-os-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.22.0\selenium-safari-driver-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\seleniumhq\selenium\selenium-support\4.22.0\selenium-support-4.22.0.jar;C:\Users\Lenovo\.m2\repository\org\testng\testng\7.10.2\testng-7.10.2.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\Lenovo\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\Lenovo\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\Lenovo\.m2\repository\io\github\bonigarcia\webdrivermanager\5.9.1\webdrivermanager-5.9.1.jar;C:\Users\Lenovo\.m2\repository\com\google\code\gson\gson\2.11.0\gson-2.11.0.jar;C:\Users\Lenovo\.m2\repository\com\google\errorprone\error_prone_annotations\2.27.0\error_prone_annotations-2.27.0.jar;C:\Users\Lenovo\.m2\repository\com\github\docker-java\docker-java\3.3.6\docker-java-3.3.6.jar;C:\Users\Lenovo\.m2\repository\com\github\docker-java\docker-java-core\3.3.6\docker-java-core-3.3.6.jar;C:\Users\Lenovo\.m2\repository\com\github\docker-java\docker-java-api\3.3.6\docker-java-api-3.3.6.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\Lenovo\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\Lenovo\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Lenovo\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.6\docker-java-transport-httpclient5-3.3.6.jar;C:\Users\Lenovo\.m2\repository\com\github\docker-java\docker-java-transport\3.3.6\docker-java-transport-3.3.6.jar;C:\Users\Lenovo\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Lenovo\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-compress\1.26.2\commons-compress-1.26.2.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Lenovo\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-java\7.18.0\cucumber-java-7.18.0.jar;C:\Users\Lenovo\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-core\7.18.0\cucumber-core-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin\7.18.0\cucumber-gherkin-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.18.0\cucumber-gherkin-messages-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\gherkin\28.0.0\gherkin-28.0.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\messages\24.1.0\messages-24.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\testng-xml-formatter\0.1.0\testng-xml-formatter-0.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\query\12.2.0\query-12.2.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\tag-expressions\6.1.0\tag-expressions-6.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-expressions\17.1.0\cucumber-expressions-17.1.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\datatable\7.18.0\datatable-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-plugin\7.18.0\cucumber-plugin-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\docstring\7.18.0\docstring-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\html-formatter\21.3.1\html-formatter-21.3.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\junit-xml-formatter\0.4.0\junit-xml-formatter-0.4.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-junit\7.18.0\cucumber-junit-7.18.0.jar;C:\Users\Lenovo\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Lenovo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-testng\7.18.0\cucumber-testng-7.18.0.jar;C:\Users\Lenovo\.m2\repository\io\cucumber\cucumber-picocontainer\7.18.0\cucumber-picocontainer-7.18.0.jar;C:\Users\Lenovo\.m2\repository\org\picocontainer\picocontainer\2.15\picocontainer-2.15.jar;C:\Users\Lenovo\.m2\repository\org\apache\poi\poi\5.3.0\poi-5.3.0.jar;C:\Users\Lenovo\.m2\repository\commons-codec\commons-codec\1.17.0\commons-codec-1.17.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Lenovo\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Lenovo\.m2\repository\commons-io\commons-io\2.16.1\commons-io-2.16.1.jar;C:\Users\Lenovo\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Lenovo\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\Lenovo\.m2\repository\org\apache\poi\poi-ooxml\5.3.0\poi-ooxml-5.3.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\poi\poi-ooxml-lite\5.3.0\poi-ooxml-lite-5.3.0.jar;C:\Users\Lenovo\.m2\repository\org\apache\xmlbeans\xmlbeans\5.2.1\xmlbeans-5.2.1.jar;C:\Users\Lenovo\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="C:\Users\h.aishwarya"/>
+    <property name="user.home" value="C:\Users\Lenovo"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2023-04-18"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk-20"/>
+    <property name="java.version.date" value="2024-04-16"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\selenium_workspace\cucumberprojectWFS"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="basedir" value="C:\selenium\JenkinsPractice"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\h.aishwarya\AppData\Local\Temp\surefire1384147898448420431\surefirebooter-20240708155455549_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Lenovo\AppData\Local\Temp\surefire12197506350666536310\surefirebooter-20240814144337629_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="java.runtime.version" value="20.0.1+9-29"/>
-    <property name="webdriver.edge.driver" value="C:\Users\h.aishwarya\.cache\selenium\msedgedriver\win64\126.0.2592.87\msedgedriver.exe"/>
-    <property name="user.name" value="h.aishwarya"/>
+    <property name="java.runtime.version" value="22.0.1+8-16"/>
+    <property name="user.name" value="Lenovo"/>
     <property name="stdout.encoding" value="Cp1252"/>
     <property name="path.separator" value=";"/>
     <property name="os.version" value="10.0"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="browser" value="edge"/>
+    <property name="browser" value="chrome"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="localRepository" value="C:\Users\h.aishwarya\.m2\repository"/>
+    <property name="localRepository" value="C:\Users\Lenovo\.m2\repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="java.io.tmpdir" value="C:\Users\H08BB~1.AIS\AppData\Local\Temp\"/>
-    <property name="java.version" value="20.0.1"/>
-    <property name="user.dir" value="C:\selenium_workspace\cucumberprojectWFS"/>
+    <property name="java.io.tmpdir" value="C:\Users\Lenovo\AppData\Local\Temp\"/>
+    <property name="java.version" value="22.0.1"/>
+    <property name="user.dir" value="C:\selenium\JenkinsPractice"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-20\bin;C:\windows\Sun\Java\bin;C:\windows\system32;C:\windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Python310\Scripts\;C:\Python310\;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\selenium_workspace\apache-maven-3.8.6-bin\apache-maven-3.8.6\bin;C:\Users\h.aishwarya\AppData\Local\Android\SDK\platform-tools;C:\Users\h.aishwarya\AppData\Local\Android\SDK\tools\bin;C:\Users\h.aishwarya\AppData\Local\Android\SDK\tools;C:\ProgramData\chocolatey\bin;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-20\bin;node_modules\npm\bin;C:\Users\h.aishwarya\Downloads\allure-2.23.1\allure-2.23.1\bin;%JAVA_HOME%\bin;C:\Users\h.aishwarya\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Perforce\Helix ALM;C:\Users\h.aishwarya\AppData\Local\Microsoft\WindowsApps;C:\Users\h.aishwarya\.dotnet\tools;C:\Program Files\Azure Data Studio\bin;C:\Users\h.aishwarya\AppData\Roaming\npm;C:\Users\h.aishwarya\Downloads\allure-2.23.1\allure-2.23.1\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin;;C:\Users\h.aishwarya\AppData\Roaming\nvm;C:\Program Files\nodejs;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Users\Lenovo\.jenkins\tools\hudson.tasks.Maven_MavenInstallation\TestMaven/bin;C:\Program Files\Java\jdk-22\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Java\jdk-18.0.1\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;%MAVEN_HOME%\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\Lenovo\AppData\Local\Programs\Python\Python39\;C:\Users\Lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\Lenovo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Lenovo\.dotnet\tools;;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.4\bin;;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="stderr.encoding" value="Cp1252"/>
     <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="20.0.1+9-29"/>
+    <property name="java.vm.version" value="22.0.1+8-16"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="java.class.version" value="64.0"/>
+    <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="runScenario[&quot;To verify registration with blank information&quot;, &quot;To check your information page functionality of sauce website&quot;](1)" classname="com.runner.TestRunner" time="29.869">
+  <testcase name="runScenario[&quot;To verify products added are displayed on cart page&quot;, &quot;To verify products in cart page&quot;](1)" classname="com.runner.TestRunner" time="310.197">
     <system-out><![CDATA[
-@Cart @VerifyProducts
-Scenario: To verify products added and products in cart page are same                                         # src/test/resources/Feature/cartPage.feature:15
-
 @Information @InvalidInformationTest
-Scenario Outline: To verify registration with blank information               # src/test/resources/Feature/YourInformationPage.feature:26
-
-@Information @InvalidInformationTest
-Scenario Outline: To verify registration with blank information               # src/test/resources/Feature/YourInformationPage.feature:22
-
-@ProductCheckout @ProductCheckoutTest
-Scenario: To add products to cart and complete the checkout process                                 # src/test/resources/Feature/SauceWebsiteFunctionality.feature:9
+Scenario Outline: To verify registration with blank information              # src/test/resources/Feature/YourInformationPage.feature:23
 
 @Information @InvalidInformationTest
 Scenario Outline: To verify registration with blank information                # src/test/resources/Feature/YourInformationPage.feature:24
 
+@Cart @VerifyProducts
+Scenario: To verify products added and products in cart page are same                                         # src/test/resources/Feature/cartPage.feature:15
+
 @Information @InvalidInformationTest
 Scenario Outline: To verify registration with blank information              # src/test/resources/Feature/YourInformationPage.feature:25
 
-@Information @ValidInformationTest
-Scenario: To verify registration with valid information                                  # src/test/resources/Feature/YourInformationPage.feature:9
+@Cart @CheckProductDisplayed
+Scenario: To verify products added are displayed on cart page                                                 # src/test/resources/Feature/cartPage.feature:9
 
 @Information @InvalidInformationTest
-Scenario Outline: To verify registration with blank information              # src/test/resources/Feature/YourInformationPage.feature:23
+Scenario Outline: To verify registration with blank information               # src/test/resources/Feature/YourInformationPage.feature:26
 
 @Login @ValidLoginTest
 Scenario: To verify login with valid username and password                           # src/test/resources/Feature/loginPage.feature:8
 
-@Cart @CheckProductDisplayed
-Scenario: To verify products added are displayed on cart page                                                 # src/test/resources/Feature/cartPage.feature:9
-  Given User is on sauce demo website login page                              # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
+@Information @InvalidInformationTest
+Scenario Outline: To verify registration with blank information               # src/test/resources/Feature/YourInformationPage.feature:22
+
+@Information @ValidInformationTest
+Scenario: To verify registration with valid information                                  # src/test/resources/Feature/YourInformationPage.feature:9
+
+@ProductCheckout @ProductCheckoutTest
+Scenario: To add products to cart and complete the checkout process                                 # src/test/resources/Feature/SauceWebsiteFunctionality.feature:9
   Given User is on sauce website login page                                                                   # com.stepdefinition.CartPageStepDef.user_is_on_sauce_website()
-  Given User is on sauce demo website login page                             # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
-  Given User is on sauce demo website login page                             # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
   And user login with valid username as "standard_user" and valid password as "secret_sauce" to sauce website # com.stepdefinition.CartPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
-Products added
 Products added
   Given User add products to cart                                                                             # com.stepdefinition.CartPageStepDef.user_add_products_to_cart()
   When user move to cart page                                                                                 # com.stepdefinition.CartPageStepDef.user_move_to_cart_page()
-  And User will complete product checkout process till your information page  # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
 Products are displayed in cart page
-  Given User is on your information page                                      # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
-  Given User is on sauce website login page                                                                   # com.stepdefinition.CartPageStepDef.user_is_on_sauce_website()
-  Given User is on sauce demo website login page                              # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
-Products added
-  Given User is on sauce demo website login page                                         # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
-  Given User is on sauce website                                                                    # com.stepdefinition.ProductCheckoutProcessStepDef.user_is_on_sauce_website()
-Information is entered
-  When user enter valid firstName "" lastName "Ram" and postalCode "34534"    # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)
-  And user login with valid username as "standard_user" and valid password as "secret_sauce" to sauce website # com.stepdefinition.CartPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
-Products added
-  And User will complete product checkout process till your information page # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
-  Given User is on your information page                                     # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
-Products added
-  Given User add products to cart                                                                             # com.stepdefinition.CartPageStepDef.user_add_products_to_cart()
-  And User will complete product checkout process till your information page # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
-  When user move to cart page                                                                                 # com.stepdefinition.CartPageStepDef.user_move_to_cart_page()
-Products added
-  Given User is on your information page                                     # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
-  And user login with valid username as "standard_user" password as "secret_sauce" to sauce website # com.stepdefinition.ProductCheckoutProcessStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
-Products verified
-Products added
-User on Products page
-  Given User is on products page                                                                    # com.stepdefinition.ProductCheckoutProcessStepDef.user_is_on_products_page()
-Information is entered
-  And User will complete product checkout process till your information page  # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
-  Given User is on your information page                                      # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
-  When user enter valid firstName "Arya" lastName "" and postalCode ""       # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)
-Information is entered
-  And User will complete product checkout process till your information page             # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
-  Given User is on your information page                                                 # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
-  When user enter valid firstName "Ziva" lastName "" and postalCode "34567"  # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)
-Products added
-Cart value is correct
-  When user add products to cart                                                                    # com.stepdefinition.ProductCheckoutProcessStepDef.add_products_to_cart_and_verify_cart_value()
-Information is entered
-  When user enter valid firstName "" lastName "" and postalCode ""            # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)
-Information is entered
-Products verified
-  And move to cart page                                                                             # com.stepdefinition.ProductCheckoutProcessStepDef.move_to_cart_page()
-  When user enter valid firstName as "Arya" lastName as "Raj" and postalCode as "573201" # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_as_last_name_as_and_postal_code_as(java.lang.String,java.lang.String,java.lang.String)
-  And click on checkout button                                                                      # com.stepdefinition.ProductCheckoutProcessStepDef.click_on_checkout_button()
-2024-07-08T10:25:22.003325400Z TestNG-PoolService-1 ERROR Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-  Given User is on sauce demo website login page                               # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
-  Given User is on login page                                                        # com.stepdefinition.LoginStepDef.user_is_on_login_page()
-  Given User enter valid username as "standard_user"  and password as "secret_sauce" # com.stepdefinition.LoginStepDef.user_enter_valid_username_as_and_password_as(java.lang.String,java.lang.String)
-Information is entered
-  And enter the details                                                                             # com.stepdefinition.ProductCheckoutProcessStepDef.enter_the_details_and_click_on_continue_button()
-  And click on continue button                                                                      # com.stepdefinition.ProductCheckoutProcessStepDef.click_on_continue_button()
-  When click on login button                                                         # com.stepdefinition.LoginStepDef.click_on_login_button()
-Login Successfull!!!
-  And click on finish                                                                               # com.stepdefinition.ProductCheckoutProcessStepDef.click_on_finish()
-Product checkout completed
-  Then product checkout should be completed and message to be displayed                             # com.stepdefinition.ProductCheckoutProcessStepDef.product_checkout_should_be_completed_and_message_to_be_displayed()
-Products added
-  And User will complete product checkout process till your information page   # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
-Logout Successful
-  Given User is on your information page                                       # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
-Information is entered
-  When user enter valid firstName "Arya" lastName "Raj" and postalCode ""      # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)
-  Then User should get correct error meassage "Error: Last Name is required" # com.stepdefinition.YourInformationPageStepDef.user_should_get_correct_error_meassage(java.lang.String)
+  Then verify products that are added are displayed in cartpage                                               # com.stepdefinition.CartPageStepDef.verify_products_that_are_added_are_displayed_in_cartpage()
 ]]></system-out>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;To verify registration with blank information&quot;, &quot;To check your information page functionality of sauce website&quot;](2)" classname="com.runner.TestRunner" time="0.06">
+  <testcase name="runScenario[&quot;To verify login with invalid username and password&quot;, &quot;To check login functionality of sauce website&quot;](2)" classname="com.runner.TestRunner" time="2.906">
     <system-out><![CDATA[
 @Login @InvalidLoginTest
 Scenario Outline: To verify login with invalid username and password                                                                               # src/test/resources/Feature/loginPage.feature:21
-  Then User should get correct error meassage "Error: Last Name is required" # com.stepdefinition.YourInformationPageStepDef.user_should_get_correct_error_meassage(java.lang.String)
+  Given User is on login page                                                                                                                      # com.stepdefinition.LoginStepDef.user_is_on_login_page()
+  Given User enter invalid username "Arya"  and password as "Arya@123"                                                                             # com.stepdefinition.LoginStepDef.user_enter_invalid_username_and_password_as(java.lang.String,java.lang.String)
+  When click on login button                                                                                                                       # com.stepdefinition.LoginStepDef.click_on_login_button()
+Error Message Epic sadface: Username and password do not match any user in this service
+  Then User should not be able to login and error message "Epic sadface: Username and password do not match any user in this service" is displayed # com.stepdefinition.LoginStepDef.user_should_not_be_able_to_login_and_error_message_is_displayed(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;To add products to cart and complete the checkout process&quot;, &quot;product checkout&quot;](3)" classname="com.runner.TestRunner" time="0.142">
+  <testcase name="runScenario[&quot;To verify login with invalid username and password&quot;, &quot;To check login functionality of sauce website&quot;](3)" classname="com.runner.TestRunner" time="3.66">
     <system-out><![CDATA[
 @Login @InvalidLoginTest
 Scenario Outline: To verify login with invalid username and password                                                                               # src/test/resources/Feature/loginPage.feature:22
-  And logout from website                                                                           # com.stepdefinition.ProductCheckoutProcessStepDef.logout_from_website()
+  Given User is on login page                                                                                                                      # com.stepdefinition.LoginStepDef.user_is_on_login_page()
+  Given User enter invalid username "standard_user"  and password as "Arya@123"                                                                    # com.stepdefinition.LoginStepDef.user_enter_invalid_username_and_password_as(java.lang.String,java.lang.String)
+  When click on login button                                                                                                                       # com.stepdefinition.LoginStepDef.click_on_login_button()
+Error Message Epic sadface: Username and password do not match any user in this service
+  Then User should not be able to login and error message "Epic sadface: Username and password do not match any user in this service" is displayed # com.stepdefinition.LoginStepDef.user_should_not_be_able_to_login_and_error_message_is_displayed(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;To verify registration with valid information&quot;, &quot;To check your information page functionality of sauce website&quot;](4)" classname="com.runner.TestRunner" time="0.26">
+  <testcase name="runScenario[&quot;To verify login with invalid username and password&quot;, &quot;To check login functionality of sauce website&quot;](4)" classname="com.runner.TestRunner" time="2.825">
     <system-out><![CDATA[
 @Login @InvalidLoginTest
 Scenario Outline: To verify login with invalid username and password                                        # src/test/resources/Feature/loginPage.feature:23
-  Then User should be able navigate to overview page                                     # com.stepdefinition.YourInformationPageStepDef.user_should_be_able_navigate_to_overview_page()
+  Given User is on login page                                                                               # com.stepdefinition.LoginStepDef.user_is_on_login_page()
+  Given User enter invalid username ""  and password as ""                                                  # com.stepdefinition.LoginStepDef.user_enter_invalid_username_and_password_as(java.lang.String,java.lang.String)
+  When click on login button                                                                                # com.stepdefinition.LoginStepDef.click_on_login_button()
+Error Message Epic sadface: Username is required
+  Then User should not be able to login and error message "Epic sadface: Username is required" is displayed # com.stepdefinition.LoginStepDef.user_should_not_be_able_to_login_and_error_message_is_displayed(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;To verify registration with blank information&quot;, &quot;To check your information page functionality of sauce website&quot;](5)" classname="com.runner.TestRunner" time="0.256">
+  <testcase name="runScenario[&quot;To verify login with invalid username and password&quot;, &quot;To check login functionality of sauce website&quot;](5)" classname="com.runner.TestRunner" time="2.427">
     <system-out><![CDATA[
 @Login @InvalidLoginTest
 Scenario Outline: To verify login with invalid username and password                                        # src/test/resources/Feature/loginPage.feature:24
-  Then User should get correct error meassage "Error: First Name is required" # com.stepdefinition.YourInformationPageStepDef.user_should_get_correct_error_meassage(java.lang.String)
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;To verify products added are displayed on cart page&quot;, &quot;To verify products in cart page&quot;](6)" classname="com.runner.TestRunner" time="0.076">
-    <system-out><![CDATA[
-@Login @InvalidLoginTest
-Scenario Outline: To verify login with invalid username and password                                                         # src/test/resources/Feature/loginPage.feature:25
-  Then verify products that are added are displayed in cartpage                                               # com.stepdefinition.CartPageStepDef.verify_products_that_are_added_are_displayed_in_cartpage()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;To verify registration with blank information&quot;, &quot;To check your information page functionality of sauce website&quot;](7)" classname="com.runner.TestRunner" time="0.059">
-    <system-out><![CDATA[
-@Product @VerifyCartValue
-Scenario Outline: To verify cart value                                                                  # src/test/resources/Feature/productsPage.feature:16
-  Then User should get correct error meassage "Error: First Name is required" # com.stepdefinition.YourInformationPageStepDef.user_should_get_correct_error_meassage(java.lang.String)
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;To verify registration with blank information&quot;, &quot;To check your information page functionality of sauce website&quot;](8)" classname="com.runner.TestRunner" time="0.038">
-    <system-out><![CDATA[
-@Product @VerifyCartValue
-Scenario Outline: To verify cart value                                                                  # src/test/resources/Feature/productsPage.feature:17
-  Then User should get correct error meassage "Error: Postal Code is required" # com.stepdefinition.YourInformationPageStepDef.user_should_get_correct_error_meassage(java.lang.String)
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;To verify login with valid username and password&quot;, &quot;To check login functionality of sauce website&quot;](9)" classname="com.runner.TestRunner" time="0.083">
-    <system-out><![CDATA[
-@Product @VerifyCartValue
-Scenario Outline: To verify cart value                                                                  # src/test/resources/Feature/productsPage.feature:18
-  Then User should be able to login and navigate to products page                    # com.stepdefinition.LoginStepDef.user_should_be_able_to_login_and_navigate_to_products_page()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;To verify products added and products in cart page are same&quot;, &quot;To verify products in cart page&quot;](10)" classname="com.runner.TestRunner" time="0.109">
-    <system-out><![CDATA[
-@Product @VerifyFilterOption
-Scenario Outline: To verify filter in products page                                                                                       # src/test/resources/Feature/productsPage.feature:28
-  Then verify products that products added and products in cart are same                                      # com.stepdefinition.CartPageStepDef.verify_products_that_products_added_and_products_in_cart_are_same()
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;To verify login with invalid username and password&quot;, &quot;To check login functionality of sauce website&quot;](11)" classname="com.runner.TestRunner" time="23.373">
-    <system-out><![CDATA[
-@Product @VerifyFilterOption
-Scenario Outline: To verify filter in products page                                                                                  # src/test/resources/Feature/productsPage.feature:29
   Given User is on login page                                                                               # com.stepdefinition.LoginStepDef.user_is_on_login_page()
   Given User enter invalid username "standard_user"  and password as ""                                     # com.stepdefinition.LoginStepDef.user_enter_invalid_username_and_password_as(java.lang.String,java.lang.String)
   When click on login button                                                                                # com.stepdefinition.LoginStepDef.click_on_login_button()
 Error Message Epic sadface: Password is required
-  Given User is on login page                                                                                                                      # com.stepdefinition.LoginStepDef.user_is_on_login_page()
-  Given User enter invalid username "Arya"  and password as "Arya@123"                                                                             # com.stepdefinition.LoginStepDef.user_enter_invalid_username_and_password_as(java.lang.String,java.lang.String)
-  Given User is on login page                                                                                                                      # com.stepdefinition.LoginStepDef.user_is_on_login_page()
-  When click on login button                                                                                                                       # com.stepdefinition.LoginStepDef.click_on_login_button()
-Error Message Epic sadface: Username and password do not match any user in this service
-  Given User enter invalid username "standard_user"  and password as "Arya@123"                                                                    # com.stepdefinition.LoginStepDef.user_enter_invalid_username_and_password_as(java.lang.String,java.lang.String)
-  When click on login button                                                                                                                       # com.stepdefinition.LoginStepDef.click_on_login_button()
-Error Message Epic sadface: Username and password do not match any user in this service
   Then User should not be able to login and error message "Epic sadface: Password is required" is displayed # com.stepdefinition.LoginStepDef.user_should_not_be_able_to_login_and_error_message_is_displayed(java.lang.String)
 ]]></system-out>
-    <system-err><![CDATA[Jul 08, 2024 3:55:49 PM org.openqa.selenium.remote.http.WebSocket$Listener onError
-WARNING: Connection reset
-java.net.SocketException: Connection reset
-	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401)
-	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434)
-	at java.net.http/jdk.internal.net.http.SocketTube.readAvailable(SocketTube.java:1178)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:841)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:230)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:303)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:256)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1390)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1335)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1335)
-
-]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;To verify login with invalid username and password&quot;, &quot;To check login functionality of sauce website&quot;](12)" classname="com.runner.TestRunner" time="0.147">
+  <testcase name="runScenario[&quot;To verify login with invalid username and password&quot;, &quot;To check login functionality of sauce website&quot;](6)" classname="com.runner.TestRunner" time="2.801">
     <system-out><![CDATA[
-@Product @VerifyFilterOption
-Scenario Outline: To verify filter in products page                                                                                         # src/test/resources/Feature/productsPage.feature:30
-  Then User should not be able to login and error message "Epic sadface: Username and password do not match any user in this service" is displayed # com.stepdefinition.LoginStepDef.user_should_not_be_able_to_login_and_error_message_is_displayed(java.lang.String)
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;To verify login with invalid username and password&quot;, &quot;To check login functionality of sauce website&quot;](13)" classname="com.runner.TestRunner" time="0.173">
-    <system-out><![CDATA[
-@Product @VerifyFilterOption
-Scenario Outline: To verify filter in products page                                                                         # src/test/resources/Feature/productsPage.feature:31
-  Given User is on sauce demo website                                                                   # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
-  Then User should not be able to login and error message "Epic sadface: Username and password do not match any user in this service" is displayed # com.stepdefinition.LoginStepDef.user_should_not_be_able_to_login_and_error_message_is_displayed(java.lang.String)
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;To verify cart value&quot;, &quot;To check product page functionality&quot;](14)" classname="com.runner.TestRunner" time="12.007">
-    <system-out><![CDATA[  And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
-  Given User is on sauce demo website                                                                                                # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
-User on Products page
-  Given User as navigated to products page                                                              # com.stepdefinition.ProductsPageStepDef.user_is_on_products_page()
+@Login @InvalidLoginTest
+Scenario Outline: To verify login with invalid username and password                                                         # src/test/resources/Feature/loginPage.feature:25
   Given User is on login page                                                                                                # com.stepdefinition.LoginStepDef.user_is_on_login_page()
-  Given User is on login page                                                                               # com.stepdefinition.LoginStepDef.user_is_on_login_page()
   Given User enter invalid username "locked_out_user"  and password as "secret_sauce"                                        # com.stepdefinition.LoginStepDef.user_enter_invalid_username_and_password_as(java.lang.String,java.lang.String)
-  Given User is on sauce demo website                                                                   # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
-  Given User is on sauce demo website                                                                                                     # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
-  Given User is on sauce demo website                                                                   # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
-  And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website                              # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
-Products removed
-  When user add products to cart "removeFromCart"                                                       # com.stepdefinition.ProductsPageStepDef.add_products_to_cart_and_verify_cart_value(java.lang.String)
-Cart value is correct
   When click on login button                                                                                                 # com.stepdefinition.LoginStepDef.click_on_login_button()
-User on Products page
-  Given User as navigated to products page                                                                                           # com.stepdefinition.ProductsPageStepDef.user_is_on_products_page()
 Error Message Epic sadface: Sorry, this user has been locked out.
-  Given User enter invalid username ""  and password as ""                                                  # com.stepdefinition.LoginStepDef.user_enter_invalid_username_and_password_as(java.lang.String,java.lang.String)
+  Then User should not be able to login and error message "Epic sadface: Sorry, this user has been locked out." is displayed # com.stepdefinition.LoginStepDef.user_should_not_be_able_to_login_and_error_message_is_displayed(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To verify cart value&quot;, &quot;To check product page functionality&quot;](7)" classname="com.runner.TestRunner" time="3.076">
+    <system-out><![CDATA[
+@Product @VerifyCartValue
+Scenario Outline: To verify cart value                                                                  # src/test/resources/Feature/productsPage.feature:16
+  Given User is on sauce demo website                                                                   # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
   And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
-  When click on login button                                                                                # com.stepdefinition.LoginStepDef.click_on_login_button()
 User on Products page
   Given User as navigated to products page                                                              # com.stepdefinition.ProductsPageStepDef.user_is_on_products_page()
 Products added
   When user add products to cart "addToCartTwoProducts"                                                 # com.stepdefinition.ProductsPageStepDef.add_products_to_cart_and_verify_cart_value(java.lang.String)
 Cart value is correct
-  When user click on filter options with value "lohi"                                                                                # com.stepdefinition.ProductsPageStepDef.user_click_on_filter_options_with_value(java.lang.String)
-Error Message Epic sadface: Username is required
-  And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website                                   # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
-low to high price sorting Verified
+  Then check cart value with expected result cartValue "2"                                              # com.stepdefinition.ProductsPageStepDef.check_cart_value_with_expected_result(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To verify cart value&quot;, &quot;To check product page functionality&quot;](8)" classname="com.runner.TestRunner" time="3.404">
+    <system-out><![CDATA[
+@Product @VerifyCartValue
+Scenario Outline: To verify cart value                                                                  # src/test/resources/Feature/productsPage.feature:17
+  Given User is on sauce demo website                                                                   # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
   And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
 User on Products page
   Given User as navigated to products page                                                              # com.stepdefinition.ProductsPageStepDef.user_is_on_products_page()
-User on Products page
-  Given User as navigated to products page                                                                                                # com.stepdefinition.ProductsPageStepDef.user_is_on_products_page()
-  When user click on filter options with value "za"                                                                                       # com.stepdefinition.ProductsPageStepDef.user_click_on_filter_options_with_value(java.lang.String)
-z to a sorting Verified
 Products added
   When user add products to cart "addToCartFourProducts"                                                # com.stepdefinition.ProductsPageStepDef.add_products_to_cart_and_verify_cart_value(java.lang.String)
+Cart value is correct
+  Then check cart value with expected result cartValue "4"                                              # com.stepdefinition.ProductsPageStepDef.check_cart_value_with_expected_result(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To verify cart value&quot;, &quot;To check product page functionality&quot;](9)" classname="com.runner.TestRunner" time="4.176">
+    <system-out><![CDATA[
+@Product @VerifyCartValue
+Scenario Outline: To verify cart value                                                                  # src/test/resources/Feature/productsPage.feature:18
+  Given User is on sauce demo website                                                                   # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
+  And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
+User on Products page
+  Given User as navigated to products page                                                              # com.stepdefinition.ProductsPageStepDef.user_is_on_products_page()
+Products removed
+  When user add products to cart "removeFromCart"                                                       # com.stepdefinition.ProductsPageStepDef.add_products_to_cart_and_verify_cart_value(java.lang.String)
 Cart value is correct
   Then check cart value with expected result cartValue "2"                                              # com.stepdefinition.ProductsPageStepDef.check_cart_value_with_expected_result(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;To verify filter in products page&quot;, &quot;To check product page functionality&quot;](15)" classname="com.runner.TestRunner" time="12.031">
-    <system-out><![CDATA[  Then the products should be sorted based on the value and the first product is "Test.allTheThings() T-Shirt (Red)" and "z to a sorting" # com.stepdefinition.ProductsPageStepDef.the_products_should_be_sorted_based_on_the_value_and_the_first_product_is(java.lang.String,java.lang.String)
+  <testcase name="runScenario[&quot;To verify registration with blank information&quot;, &quot;To check your information page functionality of sauce website&quot;](10)" classname="com.runner.TestRunner" time="2.275">
+    <system-out><![CDATA[
+@Product @VerifyFilterOption
+Scenario Outline: To verify filter in products page                                                                                       # src/test/resources/Feature/productsPage.feature:28
+  Given User is on sauce demo website login page                              # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
+Products added
+  And User will complete product checkout process till your information page  # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
+  Given User is on your information page                                      # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
+Information is entered
+  When user enter valid firstName "" lastName "Ram" and postalCode "34534"    # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)
+  Then User should get correct error meassage "Error: First Name is required" # com.stepdefinition.YourInformationPageStepDef.user_should_get_correct_error_meassage(java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;To verify filter in products page&quot;, &quot;To check product page functionality&quot;](16)" classname="com.runner.TestRunner" time="12.126">
-    <system-out><![CDATA[  Then the products should be sorted based on the value and the first product is "Sauce Labs Onesie" and "low to high price sorting" # com.stepdefinition.ProductsPageStepDef.the_products_should_be_sorted_based_on_the_value_and_the_first_product_is(java.lang.String,java.lang.String)
+  <testcase name="runScenario[&quot;To verify filter in products page&quot;, &quot;To check product page functionality&quot;](11)" classname="com.runner.TestRunner" time="3.024">
+    <system-out><![CDATA[
+@Product @VerifyFilterOption
+Scenario Outline: To verify filter in products page                                                                                  # src/test/resources/Feature/productsPage.feature:29
+  Given User is on sauce demo website                                                                                                     # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
+  And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website                                   # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
+User on Products page
+  Given User as navigated to products page                                                                                                # com.stepdefinition.ProductsPageStepDef.user_is_on_products_page()
+  When user click on filter options with value "za"                                                                                       # com.stepdefinition.ProductsPageStepDef.user_click_on_filter_options_with_value(java.lang.String)
+z to a sorting Verified
+  Given User is on sauce demo website                                                                                                # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
+  Then the products should be sorted based on the value and the first product is "Test.allTheThings() T-Shirt (Red)" and "z to a sorting" # com.stepdefinition.ProductsPageStepDef.the_products_should_be_sorted_based_on_the_value_and_the_first_product_is(java.lang.String,java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;To verify cart value&quot;, &quot;To check product page functionality&quot;](17)" classname="com.runner.TestRunner" time="12.25">
-    <system-out><![CDATA[  Then check cart value with expected result cartValue "2"                                              # com.stepdefinition.ProductsPageStepDef.check_cart_value_with_expected_result(java.lang.String)
+  <testcase name="runScenario[&quot;To verify filter in products page&quot;, &quot;To check product page functionality&quot;](12)" classname="com.runner.TestRunner" time="2.553">
+    <system-out><![CDATA[
+@Product @VerifyFilterOption
+Scenario Outline: To verify filter in products page                                                                                         # src/test/resources/Feature/productsPage.feature:30
+  And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website                              # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
+User on Products page
+  Given User as navigated to products page                                                                                           # com.stepdefinition.ProductsPageStepDef.user_is_on_products_page()
+  When user click on filter options with value "lohi"                                                                                # com.stepdefinition.ProductsPageStepDef.user_click_on_filter_options_with_value(java.lang.String)
+low to high price sorting Verified
+  Given User is on sauce website login page                                                                   # com.stepdefinition.CartPageStepDef.user_is_on_sauce_website()
+  Then the products should be sorted based on the value and the first product is "Sauce Labs Onesie" and "low to high price sorting" # com.stepdefinition.ProductsPageStepDef.the_products_should_be_sorted_based_on_the_value_and_the_first_product_is(java.lang.String,java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;To verify login with invalid username and password&quot;, &quot;To check login functionality of sauce website&quot;](18)" classname="com.runner.TestRunner" time="12.253">
-    <system-out><![CDATA[  Then User should not be able to login and error message "Epic sadface: Username is required" is displayed # com.stepdefinition.LoginStepDef.user_should_not_be_able_to_login_and_error_message_is_displayed(java.lang.String)
+  <testcase name="runScenario[&quot;To verify products added and products in cart page are same&quot;, &quot;To verify products in cart page&quot;](13)" classname="com.runner.TestRunner" time="2.165">
+    <system-out><![CDATA[
+@Product @VerifyFilterOption
+Scenario Outline: To verify filter in products page                                                                         # src/test/resources/Feature/productsPage.feature:31
+  And user login with valid username as "standard_user" and valid password as "secret_sauce" to sauce website # com.stepdefinition.CartPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
+Products added
+  Given User add products to cart                                                                             # com.stepdefinition.CartPageStepDef.user_add_products_to_cart()
+  When user move to cart page                                                                                 # com.stepdefinition.CartPageStepDef.user_move_to_cart_page()
+Products verified
+  Given User is on sauce demo website login page                                         # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
+  Given User is on sauce demo website                                                                                                       # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
+  Then verify products that products added and products in cart are same                                      # com.stepdefinition.CartPageStepDef.verify_products_that_products_added_and_products_in_cart_are_same()
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;To verify login with invalid username and password&quot;, &quot;To check login functionality of sauce website&quot;](19)" classname="com.runner.TestRunner" time="12.281">
-    <system-out><![CDATA[  Then User should not be able to login and error message "Epic sadface: Sorry, this user has been locked out." is displayed # com.stepdefinition.LoginStepDef.user_should_not_be_able_to_login_and_error_message_is_displayed(java.lang.String)
-  Then check cart value with expected result cartValue "4"                                              # com.stepdefinition.ProductsPageStepDef.check_cart_value_with_expected_result(java.lang.String)
-]]></system-out>
-  </testcase>
-  <testcase name="runScenario[&quot;To verify cart value&quot;, &quot;To check product page functionality&quot;](20)" classname="com.runner.TestRunner" time="12.282"/>
-  <testcase name="runScenario[&quot;To verify filter in products page&quot;, &quot;To check product page functionality&quot;](21)" classname="com.runner.TestRunner" time="17.663">
-    <system-out><![CDATA[  Given User is on sauce demo website                                                                                                       # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
-  And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website                                     # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
+  <testcase name="runScenario[&quot;To verify filter in products page&quot;, &quot;To check product page functionality&quot;](14)" classname="com.runner.TestRunner" time="2.953">
+    <system-out><![CDATA[  And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website                                     # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
 User on Products page
   Given User as navigated to products page                                                                                                  # com.stepdefinition.ProductsPageStepDef.user_is_on_products_page()
+Products added
   When user click on filter options with value "hilo"                                                                                       # com.stepdefinition.ProductsPageStepDef.user_click_on_filter_options_with_value(java.lang.String)
 high to low price sorting Verified
+  And User will complete product checkout process till your information page             # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
+  Given User is on your information page                                                 # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
+  Then the products should be sorted based on the value and the first product is "Sauce Labs Fleece Jacket" and "high to low price sorting" # com.stepdefinition.ProductsPageStepDef.the_products_should_be_sorted_based_on_the_value_and_the_first_product_is(java.lang.String,java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To verify registration with valid information&quot;, &quot;To check your information page functionality of sauce website&quot;](15)" classname="com.runner.TestRunner" time="4.157">
+    <system-out><![CDATA[Information is entered
   Given User is on sauce demo website                                                                                       # com.stepdefinition.ProductsPageStepDef.user_is_on_sauce_website()
-  And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website                     # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
+  When user enter valid firstName as "Arya" lastName as "Raj" and postalCode as "573201" # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_as_last_name_as_and_postal_code_as(java.lang.String,java.lang.String,java.lang.String)
+  Then User should be able navigate to overview page                                     # com.stepdefinition.YourInformationPageStepDef.user_should_be_able_navigate_to_overview_page()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To verify filter in products page&quot;, &quot;To check product page functionality&quot;](16)" classname="com.runner.TestRunner" time="4.576">
+    <system-out><![CDATA[  And user login with valid username as "standard_user" and password as "secret_sauce" to sauce website                     # com.stepdefinition.ProductsPageStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
 User on Products page
   Given User as navigated to products page                                                                                  # com.stepdefinition.ProductsPageStepDef.user_is_on_products_page()
   When user click on filter options with value "az"                                                                         # com.stepdefinition.ProductsPageStepDef.user_click_on_filter_options_with_value(java.lang.String)
 a to z sorting Verified
-  Then the products should be sorted based on the value and the first product is "Sauce Labs Fleece Jacket" and "high to low price sorting" # com.stepdefinition.ProductsPageStepDef.the_products_should_be_sorted_based_on_the_value_and_the_first_product_is(java.lang.String,java.lang.String)
+  Then the products should be sorted based on the value and the first product is "Sauce Labs Backpack" and "a to z sorting" # com.stepdefinition.ProductsPageStepDef.the_products_should_be_sorted_based_on_the_value_and_the_first_product_is(java.lang.String,java.lang.String)
 ]]></system-out>
   </testcase>
-  <testcase name="runScenario[&quot;To verify filter in products page&quot;, &quot;To check product page functionality&quot;](22)" classname="com.runner.TestRunner" time="18.116">
-    <system-out><![CDATA[  Then the products should be sorted based on the value and the first product is "Sauce Labs Backpack" and "a to z sorting" # com.stepdefinition.ProductsPageStepDef.the_products_should_be_sorted_based_on_the_value_and_the_first_product_is(java.lang.String,java.lang.String)
+  <testcase name="runScenario[&quot;To verify registration with blank information&quot;, &quot;To check your information page functionality of sauce website&quot;](17)" classname="com.runner.TestRunner" time="6.363">
+    <system-out><![CDATA[  Given User is on sauce demo website login page                             # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
+Products added
+  And User will complete product checkout process till your information page # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
+  Given User is on your information page                                     # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
+Information is entered
+  When user enter valid firstName "Arya" lastName "" and postalCode ""       # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)
+  Then User should get correct error meassage "Error: Last Name is required" # com.stepdefinition.YourInformationPageStepDef.user_should_get_correct_error_meassage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To add products to cart and complete the checkout process&quot;, &quot;product checkout&quot;](18)" classname="com.runner.TestRunner" time="19.422">
+    <system-out><![CDATA[  Given User is on sauce website                                                                    # com.stepdefinition.ProductCheckoutProcessStepDef.user_is_on_sauce_website()
+  And user login with valid username as "standard_user" password as "secret_sauce" to sauce website # com.stepdefinition.ProductCheckoutProcessStepDef.user_login_to_sauce_website(java.lang.String,java.lang.String)
+User on Products page
+  Given User is on products page                                                                    # com.stepdefinition.ProductCheckoutProcessStepDef.user_is_on_products_page()
+Products added
+Cart value is correct
+  When user add products to cart                                                                    # com.stepdefinition.ProductCheckoutProcessStepDef.add_products_to_cart_and_verify_cart_value()
+Products verified
+  And move to cart page                                                                             # com.stepdefinition.ProductCheckoutProcessStepDef.move_to_cart_page()
+  And click on checkout button                                                                      # com.stepdefinition.ProductCheckoutProcessStepDef.click_on_checkout_button()
+2024-08-14T09:19:40.156945Z TestNG-PoolService-1 ERROR Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Information is entered
+  And enter the details                                                                             # com.stepdefinition.ProductCheckoutProcessStepDef.enter_the_details_and_click_on_continue_button()
+  And click on continue button                                                                      # com.stepdefinition.ProductCheckoutProcessStepDef.click_on_continue_button()
+  And click on finish                                                                               # com.stepdefinition.ProductCheckoutProcessStepDef.click_on_finish()
+Product checkout completed
+  Then product checkout should be completed and message to be displayed                             # com.stepdefinition.ProductCheckoutProcessStepDef.product_checkout_should_be_completed_and_message_to_be_displayed()
+Logout Successful
+  And logout from website                                                                           # com.stepdefinition.ProductCheckoutProcessStepDef.logout_from_website()
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To verify registration with blank information&quot;, &quot;To check your information page functionality of sauce website&quot;](19)" classname="com.runner.TestRunner" time="34.038">
+    <system-out><![CDATA[  Given User is on sauce demo website login page                              # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
+Products added
+  And User will complete product checkout process till your information page  # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
+  Given User is on your information page                                      # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
+Information is entered
+  Given User is on sauce demo website login page                               # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
+  When user enter valid firstName "" lastName "" and postalCode ""            # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)
+  Then User should get correct error meassage "Error: First Name is required" # com.stepdefinition.YourInformationPageStepDef.user_should_get_correct_error_meassage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To verify registration with blank information&quot;, &quot;To check your information page functionality of sauce website&quot;](20)" classname="com.runner.TestRunner" time="35.18">
+    <system-out><![CDATA[Products added
+  And User will complete product checkout process till your information page   # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
+  Given User is on your information page                                       # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
+Information is entered
+  When user enter valid firstName "Arya" lastName "Raj" and postalCode ""      # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)
+  Then User should get correct error meassage "Error: Postal Code is required" # com.stepdefinition.YourInformationPageStepDef.user_should_get_correct_error_meassage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To verify registration with blank information&quot;, &quot;To check your information page functionality of sauce website&quot;](21)" classname="com.runner.TestRunner" time="39.4">
+    <system-out><![CDATA[  Given User is on sauce demo website login page                             # com.stepdefinition.YourInformationPageStepDef.user_is_on_sauce_demo_website_login_page()
+Products added
+  And User will complete product checkout process till your information page # com.stepdefinition.YourInformationPageStepDef.User_will_complete_product_checkout_process_till_your_information_page()
+  Given User is on your information page                                     # com.stepdefinition.YourInformationPageStepDef.user_is_on_your_information_page()
+Information is entered
+  When user enter valid firstName "Ziva" lastName "" and postalCode "34567"  # com.stepdefinition.YourInformationPageStepDef.user_enter_valid_first_name_last_name_and_postal_code(java.lang.String,java.lang.String,java.lang.String)
+  Then User should get correct error meassage "Error: Last Name is required" # com.stepdefinition.YourInformationPageStepDef.user_should_get_correct_error_meassage(java.lang.String)
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;To verify login with valid username and password&quot;, &quot;To check login functionality of sauce website&quot;](22)" classname="com.runner.TestRunner" time="77.069">
+    <system-out><![CDATA[  Given User is on login page                                                        # com.stepdefinition.LoginStepDef.user_is_on_login_page()
+  Given User enter valid username as "standard_user"  and password as "secret_sauce" # com.stepdefinition.LoginStepDef.user_enter_valid_username_as_and_password_as(java.lang.String,java.lang.String)
+  When click on login button                                                         # com.stepdefinition.LoginStepDef.click_on_login_button()
+Login Successfull!!!
+  Then User should be able to login and navigate to products page                    # com.stepdefinition.LoginStepDef.user_should_be_able_to_login_and_navigate_to_products_page()
 ]]></system-out>
   </testcase>
 </testsuite>
