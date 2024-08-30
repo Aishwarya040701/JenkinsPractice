@@ -4,6 +4,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 
 import com.pom.LoginPage;
@@ -26,11 +27,20 @@ public class BaseTest {
 	public OverviewPage overview;
 
 	public WebDriver setUp() {
+		ChromeOptions options = new ChromeOptions();
+
+		options.addArguments("--no-sandbox");
+
+		options.addArguments("--disable-dev-shm-usage");
+
+		options.addArguments("--headless");
+
+
 		read = new ReadPropertiesFile();
 		switch (System.getProperty("browser", "chrome")) {
 		case "chrome":
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(options);
 			break;
 		case "edge":
 			WebDriverManager.edgedriver().setup();
